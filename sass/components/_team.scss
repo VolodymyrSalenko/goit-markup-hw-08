@@ -1,0 +1,48 @@
+/*--------------------Розділ про команду---------------------*/
+.team {
+    background-color: var(--second-background);
+
+    &__tittle {
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        column-gap: 30px;
+    }
+
+    &__item {
+        flex-basis: calc((100% - 3 * 30px) / 4);
+    
+        background-color: var(--main-background);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    &__item-tittle {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        margin-top: 30px;
+    }
+
+    &__item-job {
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--second-color);
+    
+        margin-top: 10px;
+    }
+
+}

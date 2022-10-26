@@ -1,0 +1,128 @@
+.service {
+    &__title {
+        display: block;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--main-color);
+
+        margin-bottom: 12px;
+    }
+
+    &__label,
+    &__textarea-label {
+        position: relative;
+        display: block;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: var(--second-color);
+    
+        margin-bottom: 10px;
+    }
+
+    &__input,
+    &__textarea {
+        display: block;
+        width: 448px;
+        height: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        outline: none;
+    
+        padding-left: 42px;
+        margin-top: 4px;
+    
+        cursor: pointer;
+    
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:focus {
+            border-color: var(--accent-color);
+        }
+
+        &:focus + .service__svg {
+            fill: var(--accent-color);
+        }
+    }
+
+    &__svg {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+    
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__textarea-label {
+        margin-bottom: 20px;
+    }
+
+    &__textarea {
+        height: 120px;
+        resize: none;
+        padding: 12px 16px;
+
+        &::placeholder {
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.01em;
+            color: rgba(117, 117, 117, 0.5);
+        }
+    }
+
+    &__checkbox-label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 30px;
+    }
+
+    &__checkbox-input {
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
+
+        &:checked + .service__checkbox-mark {
+            border: none;
+            background-color: var(--accent-color);
+        }
+
+        &:checked+.service__checkbox-mark svg {
+            opacity: 1;
+        }
+    }
+
+    &__checkbox-mark {
+        display: block;
+        width: 16px;
+        height: 15px;
+        border: 2px solid #212121;
+        border-radius: 2px;
+    
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__checkbox-svg {
+        opacity: 0;
+    
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__checkbox-text {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--second-color);
+    }
+}

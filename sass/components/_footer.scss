@@ -1,0 +1,44 @@
+/*------------------------------Футер----------------------*/
+
+.footer {
+    background: var(--accent-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__wraper {
+        display: flex;
+    }
+
+    &__contacts-wraper {
+        width: 231px;
+        margin-right: 70px;
+    }
+
+    &__logo {
+        color: var(--third-color);
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &__social {
+        display: flex;
+        gap: 10px;
+        margin: 0;
+    }
+
+    &__social-title {
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--third-color);
+    
+        display: block;
+        margin-top: 12px;
+        margin-bottom: 20px;
+    }
+
+    &__form-wraper {
+        margin-left: 90px;
+    }
+}
