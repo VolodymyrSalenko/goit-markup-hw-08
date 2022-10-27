@@ -2,7 +2,8 @@
     &__title {
         display: block;
         font-size: 20px;
-        line-height: 1.15;
+        // line-height: 1.15;
+        line-height: 1.5;
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--main-color);
@@ -25,7 +26,9 @@
     &__input,
     &__textarea {
         display: block;
-        width: 448px;
+        // width: 448px;
+        width: 100%;
+        max-width: 370px;
         height: 40px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
@@ -65,8 +68,10 @@
         padding: 12px 16px;
 
         &::placeholder {
-            font-size: 12px;
-            line-height: 1.17;
+            // font-size: 12px;
+            // line-height: 1.17;
+            font-size: 14px;
+            line-height: 1.14;
             letter-spacing: 0.01em;
             color: rgba(117, 117, 117, 0.5);
         }
@@ -120,8 +125,10 @@
     }
 
     &__checkbox-text {
-        font-size: 14px;
-        line-height: 1.71;
+        // font-size: 14px;
+        // line-height: 1.71;
+        font-size: 12px;
+        line-height: 1.17;
         letter-spacing: 0.03em;
         color: var(--second-color);
     }

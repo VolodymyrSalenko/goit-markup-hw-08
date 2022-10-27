@@ -2,12 +2,16 @@
 
 .advantages {
    &__list {
-        display: flex;
-        column-gap: 30px;
+        // display: flex;
+        // column-gap: 30px;
     }
 
     &__item {
-        flex-basis: calc((100% - 90px) / 4);
+        // flex-basis: calc((100% - 90px) / 4);
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 30px;;
     }
     
     &__wraper-svg {
@@ -24,6 +28,7 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        text-align: center; // не було раніше
     
         margin-top: 30px;
         margin-bottom: 10px;

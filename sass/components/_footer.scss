@@ -5,13 +5,15 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    &__wraper {
-        display: flex;
-    }
+    // &__wraper {
+    //     // display: flex;
+    // }
 
     &__contacts-wraper {
         width: 231px;
-        margin-right: 70px;
+        margin: 0 auto 60px auto;
+        text-align: center;
+        // margin-right: 70px;
     }
 
     &__logo {
@@ -34,11 +36,13 @@
         color: var(--third-color);
     
         display: block;
-        margin-top: 12px;
+        text-align: center;
+        // margin-top: 12px;
         margin-bottom: 20px;
     }
 
     &__form-wraper {
-        margin-left: 90px;
+        margin-top: 60px;
+        // margin-left: 90px;
     }
 }
