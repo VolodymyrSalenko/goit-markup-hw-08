@@ -24,38 +24,77 @@
     <!------------------------------Меню---------------------------------->
     <header class="menu">
       <div class="container menu__container">
-        <nav class="navigation">
-          <a href="./index.html" class="logo link"><span class="logo__text">Web</span>Studio</a>
-          <ul class="navigation__list list">
-            <li class="navigation__item">
-              <a href="./index.html" class="navigation__link link">Студія</a>
-            </li>
-            <li class="navigation__item">
-              <a href="./portfolio.html" class="navigation__link link navigation__link--current">Портфоліо</a>
-            </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link link">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contacts list">
-          <li class="contacts__item">
-            <a href="mailto:info@devstudio.com" class="contacts__link link">
-              <svg class="contacts__svg" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
+        <a href="./index.html" class="logo link menu__logo "><span class="logo__text">Web</span>Studio</a>
+          <button type="button" class="btn-menu js-open-menu" >
+            <svg 
+              class="btn-menu__svg" 
+              width="40" 
+              height="40" 
+              aria-label="Перемикач мобільного меню" 
+              aria-expanded="false"
+              aria-controls="mobile-menu">
+              <use href="./images/icons.svg#icon-menu" class="btn-menu__svg-open" ></use>
+            </svg>
+          </button>
+          <div id="mobile-menu" class="mobile-menu__container js-menu-container">
+            <button type="button" class="btn-menu js-close-menu" >
+              <svg 
+                class="btn-menu__svg" 
+                width="40" 
+                height="40" 
+                aria-label="Перемикач мобільного меню" >
+                <use href="./images/icons.svg#icon-menu-close" class="btn-menu__svg-close"></use>
               </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts__item">
-            <a href="tel:+380961111111" class="contacts__link link">
-              <svg class="contacts__svg" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+            </button>
+            <nav class="navigation">
+              <ul class="navigation__list list">
+                <li class="navigation__item">
+                  <a href="./index.html" class="navigation__link link">Студія</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="./portfolio.html" class="navigation__link link navigation__link--current">Портфоліо</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="" class="navigation__link link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="mobile-menu__wraper">
+              <ul class="contacts list">
+              <li class="contacts__item">
+                <a href="mailto:info@devstudio.com" class="contacts__link contacts__link--mail link">
+                  <svg class="contacts__svg" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a href="tel:+380961111111" class="contacts__link contacts__link--tel link">
+                  <svg class="contacts__svg" width="10" height="16">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+            <ul class="mobile-social list">
+              <li class="mobile-social__item">
+                <a href="#" class="mobile-social__link link">Instagram</a>
+              </li>
+              <li class="mobile-social__item">
+                <a href="#" class="mobile-social__link link">Twitter</a>
+              </li>
+              <li class="mobile-social__item">
+                <a href="#" class="mobile-social__link link">Facebook</a>
+              </li>
+              <li class="mobile-social__item">
+                <a href="#" class="mobile-social__link link">LinkedIn</a>
+              </li>
+            </ul>
+            </div>
+            
+          </div>         
       </div>
     </header>
     <main>
@@ -268,11 +307,10 @@
           <address class="address footer__address">
             <ul class="address__list list">
               <li class="address__item">
-                <a
+                <a class="address__map-link link"
                   href="https://goo.gl/maps/K6uVQfjHcAH4xccP6"
                   target="_blank"
                   rel="noopener noflow noreferrer"
-                  class="address__map-link link"
                   >м. Київ, пр-т Лесі Українки, 26
                 </a>
               </li>
@@ -332,7 +370,7 @@
               placeholder="E-mail"
               class="subscription__email"
             />
-            <label for="email"></label>
+            <label for="email" class="subscription__email-label"></label>
             <button type="submit" class="btn-subscription subscription__btn">
               <span class="btn-subscription__tittle">Підписатися</span>
               <svg class="btn-subscription__svg" width="24" height="24">

@@ -5,15 +5,32 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    // &__wraper {
-    //     // display: flex;
-    // }
+    &__wraper {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+            justify-content: start;
+        }
+    }
 
     &__contacts-wraper {
         width: 231px;
         margin: 0 auto 60px auto;
         text-align: center;
-        // margin-right: 70px;
+
+        @media screen and (min-width: 768px) {
+            margin: 0;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 70px;
+            text-align: start;
+        }
     }
 
     &__logo {
@@ -37,12 +54,29 @@
     
         display: block;
         text-align: center;
-        // margin-top: 12px;
         margin-bottom: 20px;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 6px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            text-align: start;
+            margin-top: 12px;
+        }
     }
 
     &__form-wraper {
         margin-top: 60px;
-        // margin-left: 90px;
+
+        @media screen and (min-width: 768px) {
+            margin: 60px auto 0 auto;
+            min-width: 450px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin: 0 0 0 93px;
+            min-width: 580px;
+        }
     }
 }

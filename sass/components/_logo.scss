@@ -6,6 +6,11 @@
     letter-spacing: 0.03em;
     color: #000000;
 
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+
     &__text {
         color: var(--accent-color);
     }

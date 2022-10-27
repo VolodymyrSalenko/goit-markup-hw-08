@@ -44,5 +44,8 @@
     
         color: var(--third-color);
     }
-    display: none; // додав до мобилки
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }
